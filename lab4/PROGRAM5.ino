@@ -17,6 +17,7 @@ void setup()
 {
     // activare intrerupere Timer1 overflow
     TIMSK1 = (1 << TOIE1);
+    // TCNT1 = 0x0BDC;
     // timer1 oprit
     TCCR1A = 0;
     TCCR1B = 0;
